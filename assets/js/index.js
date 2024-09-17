@@ -112,27 +112,58 @@
 
 // Destructuring objetos con alias
 
-const tutor = {
-    nombre: "Rodrigo",
-    edad: 25,
-    pais: "Chile",
-    region: "Capital"
-}
+// const tutor = {
+//     nombre: "Rodrigo",
+//     edad: 25,
+//     pais: "Chile",
+//     region: "Capital"
+// }
 
-let { nombre: nombreTutor, edad: edadTutor, pais: paisTutor, region: regionTutor = "no tiene region"} = tutor
+// let { nombre: nombreTutor, edad: edadTutor, pais: paisTutor, region: regionTutor = "no tiene region"} = tutor
 
-console.log(nombreTutor)
-console.log(regionTutor)
+// console.log(nombreTutor)
+// console.log(regionTutor)
 
-// Destructuring con valores por defecto en objetos
+// // Destructuring con valores por defecto en objetos
 
-const profesor = {
-    nombre: "Emiliano",
-    edad: 31,
-    pais: "Argentina"
-}
+// const profesor = {
+//     nombre: "Emiliano",
+//     edad: 31,
+//     pais: "Argentina"
+// }
 
-let { nombre: nombreProfesor, edad: edadProfesor, pais: paisProfesor, region: regionProfesor = "no tiene region" } = profesor
+// let { nombre: nombreProfesor, edad: edadProfesor, pais: paisProfesor, region: regionProfesor = "no tiene region" } = profesor
 
-console.log(nombreProfesor)
-console.log(regionProfesor)
+// console.log(nombreProfesor)
+// console.log(regionProfesor)
+
+//---------------------------------------------------
+
+// Destructuring básico con arrays
+// const colores = ["Rojo", "Verde", "Azul"];
+
+// let [ primero, segundo, tercero] = colores
+
+// console.log(primero) // Rojo
+// console.log(segundo) // Verde
+// console.log(tercero) // Azul
+
+// Destructuring parcial con arrays
+
+// const frutas = ["Manzana", "Banana", "Naranja", "Pera"];
+
+// let [,segunda,,cuarta] = frutas
+
+// console.log(segunda) // Banana
+// console.log(cuarta) // Pera
+
+
+//---------------------------------------------------
+// Destructuring con valores por defecto en arrays
+
+const numeros = [10, 20];
+
+let [ uno, dos, tres = 5 ] = numeros
+console.log(uno);  // 10
+console.log(dos);  // 20
+console.log(tres); // 5
